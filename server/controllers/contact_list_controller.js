@@ -9,7 +9,10 @@ function prepareConfirmationEmail(reqBody) {
 	const subject = "英語物語メールマガジンのご登録に関して";
 	const url = formatUrl(Settings.url) + '/success';
 	const link = "<a href='" + url + "'>クリック</a>"
-	const mailText = "英語物語メールマガジンにご登録頂きありがとうございました。（まだ完了していません）'+\n\r+'こちらのURLを"+link+"頂くと登録が完了します。\n登録リンクは24時間のみ有効です。よろしくお願いします。\nhttps://eigomonogatari.com/";
+	const mailText = "英語物語メールマガジンにご登録頂きありがとうございました。（まだ完了していません）<br/>\
+	こちらのURLを"+link+"頂くと登録が完了します。<br/>\
+	登録リンクは24時間のみ有効です。よろしくお願いします。<br/>\
+	https://eigomonogatari.com/";
 
 	var emailBody = {
 	  personalizations: [
