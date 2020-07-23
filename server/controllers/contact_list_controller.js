@@ -6,10 +6,10 @@ const Settings = require('../../settings');
 const optIn = 'opt-in';
 
 function prepareConfirmationEmail(reqBody) {
-	const subject = "Please Confirm Your Email Address";
+	const subject = "英語物語メールマガジンのご登録に関して";
 	const url = formatUrl(Settings.url) + '/success';
-	const link = "<a href='" + url + "'>this link</a>"
-	const mailText = "Thanks for signing up! Click " + link + " to sign up!  This link will be active for 24 hours.";
+	const link = "<a href='" + url + "'>クリック</a>"
+	const mailText = "英語物語メールマガジンにご登録頂きありがとうございました。（まだ完了していません）こちらのURLを"+link+"頂くと登録が完了します。登録リンクは24時間のみ有効です。よろしくお願いします。https://eigomonogatari.com/";
 
 	var emailBody = {
 	  personalizations: [
