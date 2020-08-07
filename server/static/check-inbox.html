@@ -1,24 +1,22 @@
 <!-- HEADER -->
 <!DOCTYPE html>
 <head>
-	<?php wp_head(); ?>
- 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
- 	<meta http-equiv="Content-type" content="text/html; charset=utf-8">
- 	<meta name="viewport" content="width=device-width, initial-scale=1">
+ <meta http-equiv="X-UA-Compatible" content="IE=edge">
+ <meta http-equiv="Content-type" content="text/html; charset=utf-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1">
 
- 	<link rel="stylesheet" href="https://eigomonogatari.com/wp/wp-content/themes/eigomonogatari/css/style.css">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.css" type="text/css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.css" type="text/css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css" type="text/css">
+ <link rel="stylesheet" href="https://eigomonogatari.com/wp/wp-content/themes/eigomonogatari/css/style.css">
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.css" type="text/css">
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.css" type="text/css">
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css" type="text/css">
 
-</head>
-<body>
-  
 <style>
   #ezine-header {
+    align-items: center;
     background-color: #000;
-    display: block;
+    display: flex;
     height: 116px;
+    justify-content: center;
   }
   #ezine-header .logo img {
     display: block;
@@ -29,16 +27,19 @@
   #ezine-main-content {
     display: block;
     margin: 0 auto;
+    padding-bottom: 1000px;
     width: 1000px;
   }
   #ezine-main-content p {
     font-size: 16px;
     line-height: 30px;
+    margin-bottom: 50px;
   }
   #ezine-footer {
     background-color: #000;
     display: block;
     height: 100px;
+    line-height: 100px;
   } 
   #ezine-footer .copyright {
     color: #fff;
@@ -46,6 +47,11 @@
     text-align: center;
   }  
 </style>
+	
+</head>
+<body>
+  
+
 
 <header id="ezine-header">
   <figure class="logo">
